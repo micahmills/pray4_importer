@@ -9,6 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "eleventy --serve",
+    "run": "eleventy",
+    "parseCSV": "node csvconvert.mjs"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   },
