@@ -1,0 +1,10 @@
+const parse = require("csv-parse/lib/sync");
+
+eleventyConfig.addDataExtension("csv", (contents) => {
+    console.log('contents', contents);
+  const records = parse(contents, {
+    columns: true,
+    skip_empty_lines: true,
+  });
+  return records;
+});

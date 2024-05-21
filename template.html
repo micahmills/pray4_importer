@@ -1,0 +1,70 @@
+---
+pagination:
+  data: prayerrequests
+  size: 1
+  alias: prayer
+permalink: "DailyPrayer/{{ prayer.Day | slugify }}/"
+---
+<!-- wp:cover {"url":"https://pray4digital.com/olympics/wp-content/uploads/sites/45/2024/05/Olympic-Split-Images-2.png","id":63,"dimRatio":0,"overlayColor":"white","isUserOverlayColor":true,"contentPosition":"bottom right","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-right"><span aria-hidden="true" class="wp-block-cover__background has-white-background-color has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-63" alt="" src="https://pray4digital.com/olympics/wp-content/uploads/sites/45/2024/05/Olympic-Split-Images-2.png" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"right","style":{"typography":{"fontSize":"20px"}}} -->
+    <h2 class="wp-block-heading has-text-align-right" style="font-size:20px">Prayer Prompt</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:heading {"textAlign":"right","style":{"elements":{"link":{"color":{"text":"#b9a555"}}},"color":{"text":"#b9a555"},"typography":{"fontSize":"60px"}},"className":"bauhaus-font"} -->
+    <h2 class="wp-block-heading has-text-align-right bauhaus-font has-text-color has-link-color" style="color:#b9a555;font-size:60px">DAY {{ prayer.Day }}</h2>
+    <!-- /wp:heading --></div></div>
+    <!-- /wp:cover -->
+    
+    <!-- wp:spacer {"height":"40px"} -->
+    <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:heading -->
+    <h2 class="wp-block-heading">Meditate on Scripture</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph -->
+    <p>{{ prayer.verse }}</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:spacer {"height":"20px"} -->
+    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:heading -->
+    <h2 class="wp-block-heading">Prayer Focus: {{ prayer.PillarName }}</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph -->
+    <p>{{ prayer.PillarText }}</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:spacer {"height":"20px"} -->
+    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:heading -->
+    <h2 class="wp-block-heading">Pray for Paris</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group"><!-- wp:paragraph -->
+    <p>{{ prayer.paris }}</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:spacer {"height":"20px"} -->
+    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:heading -->
+    <h2 class="wp-block-heading">Pray for the Nations</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph -->
+    <p>{{ prayer.affinity }}</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:spacer {"height":"20px"} -->
+    <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
